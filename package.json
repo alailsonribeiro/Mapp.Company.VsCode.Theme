@@ -1,0 +1,83 @@
+{
+	"name": "mapp-company-material",
+	"displayName": "Mapp.Company Material Theme",
+	"description": "A clean dark material theme and icon package for Visual Studio Code Editor",
+	"version": "1.0.0",
+	"publisher": "Mapp.Company",
+	"engines": {
+		"vscode": "*"
+	},
+	"__metadata": {
+		"publisherDisplayName": "Mapp.Company",
+		"publisherId": "",
+		"id": "",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1693850529098,
+		"preRelease": false
+	},
+	"homepage": "https://github.com/alailsonribeiro/Mapp.Company.VsCode.Theme/blob/master/README.md",
+	"license": "MIT",
+	"categories": [
+		"Themes"
+	],
+	"icon": "assets/logo.png",
+	"keywords": [
+		"dark",
+		"black",
+		"grey",
+		"gray",
+		"material",
+		"darkgrey",
+		"theme",
+		"icons"
+	],
+	"galleryBanner": {
+		"color": "#080808",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alailsonribeiro/Mapp.Company.VsCode.Theme"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Mapp.Company Material Theme | Default Version",
+				"uiTheme": "vs-dark",
+				"path": "./themes/default-mapp-company-material.json"
+			},
+			{
+				"label": "Mapp.Company Material Theme | Full Black Version",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fullblack-mapp-company-material.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "mapp-company-material-icons",
+				"label": "Mapp.Company Material Icon Package",
+				"path": "./icons/icons.json"
+			}
+		]
+	},
+	"scripts": {
+		"format:fix": "eslint --fix '*.{js,json}' 'themes/*.{js,json}'",
+		"test": "npm run test:js && npm run test:json && npm run test:md && npm run format:fix",
+		"test:js": "eslint '*.js' 'themes/*.js'",
+		"test:json": "eslint '*.json' 'themes/*.json'",
+		"test:md": "remark 'README.md'"
+	},
+	"devDependencies": {
+		"@arcticicestudio/eslint-config-base": "^0.11.0",
+		"@arcticicestudio/remark-preset-lint": "^0.4.0",
+		"@babel/eslint-parser": "^7.14.5",
+		"eslint": "^7.23.0",
+		"eslint-plugin-import": "^2.13.0",
+		"eslint-plugin-json": "^1.4.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"prettier": "^1.13.7",
+		"remark-cli": "^9.0.0"
+	}
+}

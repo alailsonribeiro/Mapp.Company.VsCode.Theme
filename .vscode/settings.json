@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#000000",
+        "statusBar.debuggingBackground": "#777777",
+        "statusBar.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+        "statusBar.foreground": "#9DE2FD",
+        "statusBar.noFolderBackground": "#000000",
+        "activityBar.background": "#5F080C",
+        "titleBar.activeBackground": "#850C11",
+        "titleBar.activeForeground": "#FFFBFC"
+    }
+}
